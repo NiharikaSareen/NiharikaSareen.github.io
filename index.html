@@ -1,323 +1,446 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
-		<title>NIHARIKA</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		 
-	</head>
-	<body data-spy="scroll" data-target=".navbar" data-offset="50">
-		<div class="wrapper">
-			<div class="lines--container">
-				<div class="line-col first"></div>
-				<div class="line-col second"></div>
-				<div class="line-col third"></div>
-				<div class="line-col fourth"></div>
-			</div>
-	<!-- 	<div class="navigation">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-				  	<a class="navbar-brand" href="#"><img src="images/logo.png"></a>
-				  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				  	</button>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
 
-				  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				    	<ul class="navbar-nav ml-lg-auto">
-				      		<li class="nav-item">
-				        		<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-				      		</li>
-				      		<li class="nav-item">
-				        		<a class="nav-link" href="#about">About Me</a>
-				      		</li>
-				      		<li class="nav-item">
-				        		<a class="nav-link" href="#portfolio">Portfolio</a>
-				      		</li>
-				      		<li class="nav-item">
-				        		<a class="nav-link" href="#contact">Contact</a>
-				      		</li>
-				    	</ul>
-				  </div>
-			</nav>
-		</div> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <title>Niharika Sareen - Front End Developer</title>
+  </head>
 
-		<header class="header" id="home">
-	
-				<video autoplay muted loop id="myVideo">
-	  				<source src="images/Typing.mp4" type="video/mp4">
-				</video>
-   				<div class="contentBox">
-   					<div>
-	   					<h1 data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="50">Web Developer &  Designer</h1>
-	   					<p data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="500"><span class="rotate header-rotate">Creativity, Designing, Developing</span></p>
-	   					<p> 
-						I'm creative designer and make things work.
-						<br>
-						Turning your dreams into reality
-						</p>
-   					</div>
-   				</div>
-   						<div class="header__mask">
-   			</div>
-		</header>
-		<section class="about" id="about">
-			<div class="about__details">
-				<div class="about__details-contentBox">
-					<div>
-						<div class="navlink-container" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="0">
-							<a href="" class="navlink link">About</a>
-							<div class="background-text">About</div>							
-						</div>
-						<div class="typed-strings">
-	    							<p>Know More</p>
-	    							<p>Who am I</p>
-							</div>
-							<p class="typed heading__subtitle"></p>	
-						<!-- <h1 data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="0" class="heading__title">About<br> me
-								<div class="typed-strings">
-	    							<p>Know More</p>
-	    							<p>Who am I</p>
-								</div>
-								<p class="typed heading__subtitle"></p>						
-						</h1> -->
-						<p data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="0">
-							<span>
-							Hello, I'm Niharika
-							</span>
-							I'm Front End Developer, life long learner, and ready for new opportunities. A bit about me, I love painiting, the calligraphy, teach and all the things creative.
-						</p>
-						<p data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="500">
-							I believe in user centerened design and delievering the best possible experience to peoplr. I have experience with Html, css, Bootstrap, Flexbox, Javascript, JQuery, Git, Github
-						</p>
-					</div>
-				</div>
-				
-				<div class="about__details-image">
-					<img src="images/image-4.png" class="about-img">
-				</div>
-			</div>
-		</section>
-		<section class="skills">
-			<div class="navlink-container" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="0">
-				<a href="" class="navlink link">Skills</a>
-				<div class="background-text">Skills</div>
-			</div>
-			<div class="typed-strings typed-skills">
-	    		<p>My Knowledge</p>
-	    		<p>What I Know</p>
-			</div>
-			<p class="typed typedSkills heading__subtitle"></p>
-				<!-- <h1 data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="0" class="heading__title">Skills
-					<div class="typed-strings typed-skills">
-	    				<p>My Knowledge</p>
-	    				<p>What I Know</p>
-					</div>
-					<p class="typed typedSkills heading__subtitle"></p>						
-				</h1> -->
-		  <ul class="lines">
-		    <li class="line l--25">Fundamental</li>
-		    <li class="line l--50">Intermediate</li>
-		    <li class="line l--75">Advanced</li>
-		    <li class="line l--100">Expert</li>
-		  </ul>
-		  <div class="charts" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="1000">
-		    <div class="chart">
-		      <ul class="chart--horiz">
-		        <li class="chart__bar" style="width: 98%;">
-		          <span class="chart__label">
-		            HTML5
-		          </span>
-		        </li>
-		        <li class="chart__bar" style="width: 98%;">
-		          <span class="chart__label">
-		            CSS3 & SCSS
-		          </span>
-		        </li>
-		        <li class="chart__bar" style="width: 70%;">
-		          <span class="chart__label">
-		            JavaScript
-		          </span>
-		        </li>
-		        <li class="chart__bar" style="width: 40%;">
-		          <span class="chart__label">
-		            AngularJS
-		          </span>
-		        </li>
-		        <li class="chart__bar" style="width: 40%;">
-		          <span class="chart__label">
-		            ReactJS
-		          </span>
-		        </li>
-		        <li class="chart__bar" style="width: 60%;">
-		          <span class="chart__label">
-		            jQuery
-		          </span>
-		        </li>
-		        <li class="chart__bar" style="width: 55%;">
-		          <span class="chart__label">
-		            NodeJS
-		          </span>
-		        </li>
-		        <li class="chart__bar" style="width: 50%;">
-		          <span class="chart__label">
-		            Grunt / Gulp / Webpack
-		          </span>
-		        </li>
-		        <li class="chart__bar" style="width: 40%;">
-		          <span class="chart__label">
-		            .NET
-		          </span>
-		        </li>
-		        <li class="chart__bar" style="width: 60%;">
-		          <span class="chart__label">
-		            Umbraco
-		          </span>
-		        </li>
-		        <li class="chart__bar" style="width: 60%;">
-		          <span class="chart__label">
-		            Sitecore
-		          </span>
-		        </li>
-		      </ul>
-		    </div>
-		  </div>
-		</section>
-		<section class="portfolio" id="portfolio">
-			<div class="portfolio__details">
-				<div class="navlink-container" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="0">
-				<a href="" class="navlink link">Projects</a>
-				<div class="background-text">Projects</div>
-			</div>
-			<div class="typed-strings typed-project">
-	    		<p>My Work</p>
-	    		<p>My Passion</p>
-			</div>
-			<p class="typed typedProject heading__subtitle"></p>
-			<!-- <h1 data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="0" class="heading__title">Projects
-								<div class="typed-strings typed-project">
-	    							<p>My Work</p>
-	    							<p>My Passion</p>
-								</div>
-								<p class="typed typedProject heading__subtitle"></p>						
-			</h1> -->
-			<div class="recentWork__container">	
-			<div class="projectContainer">  
-				<div class="projectContainer--text">
-					<h3>Project-Name</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolores doloremque saepe rerum quas perspiciatis omnis ipsam, nihil vitae impedit cum ea laboriosam dolorum quasi enim</p>
-				</div>
-				<div class="projectContainer--img">
-					<img src="images/SLG.png">
-				</div>
-			</div>
-			<div class="projectContainer">
-				<div class="projectContainer--img">
-					<img src="images/JSP.png">
-				</div>  
-			<div class="projectContainer--text">
-				<h3>Project-Name</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolores doloremque saepe rerum quas perspiciatis omnis ipsam, nihil vitae impedit cum ea laboriosam dolorum quasi enim</p>
-			</div>
-			</div>
-				
-					<!-- <div class="projectCard">
-				  		<div class="projectImage">
-				  			<img src="images/image-1.png" alt="">
-				  			<div class="projectImage__info">
-				  				<button class="trigger">
-				  					<i class="fa fa-arrow-right" aria-hidden="true"></i>
-				  				</button>
-				  			</div>
-				  		</div>
-				  		<div class="project-info">
-					  		<div class="project-name">Project-Name</div>
-					  		<div class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolores doloremque saepe rerum quas perspiciatis omnis ipsam, nihil vitae impedit cum ea laboriosam dolorum quasi enim</div>
-					  		<button class="backbtn trigger">
-					  			Back
-					  		</button>
-				  		</div> 	
-  					</div>
-  					<div class="projectCard">
-				  		<div class="projectImage">
-				  			<img src="images/JSP.png" alt="">
-				  			<div class="projectImage__info">
-				  				<button class="trigger">
-				  					<i class="fa fa-arrow-right" aria-hidden="true"></i>
-				  				</button>
-				  			</div>
-				  		</div>
-				  		<div class="project-info">
-					  		<div class="project-name">Project-Name</div>
-					  		<div class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolores doloremque saepe rerum quas perspiciatis omnis ipsam, nihil vitae impedit cum ea laboriosam dolorum quasi enim</div>
-					  		<button class="backbtn trigger">
-					  			Back
-					  		</button>
-				  		</div> 	
-  					</div>
-  					<div class="projectCard">
-				  		<div class="projectImage">
-				  			<img src="images/SLG.png" alt="">
-				  			<div class="projectImage__info">
-				  				<button class="trigger">
-				  					<i class="fa fa-arrow-right" aria-hidden="true"></i>
-				  				</button>
-				  			</div>
-				  		</div>
-				  		<div class="project-info">
-					  		<div class="project-name">Project-Name</div>
-					  		<div class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi dolores doloremque saepe rerum quas perspiciatis omnis ipsam, nihil vitae impedit cum ea laboriosam dolorum quasi enim</div>
-					  		<button class="backbtn trigger">
-					  			Back
-					  		</button>
-				  		</div> 	
-  					</div> -->
-				  </div>
-			</div>
-		</section>
-		<footer class="contact" id="contact">
-			<div class="contentBox">
-				<h3>Say hi!</br>
-				DON'T BE SHY.</h3>
-               <p>Feel free to check out my resumé on "linkdin" to know more about my employment and education history.</p>
-				<div data-aos="fade-up"  class="thankyou-container" data-aos-duration="1000" data-aos-delay="500">							<h3 class="rotate thankyou">Thanks.,Gracias.,धन्यवाद.,Merci.,Grazie.</h3>
-				</div>
-				<div class="row social--container">
-					<div class="col-sm-12">
-						
-						<ul class="social--container__icons">
-							<li>
-								<a href="#">
-									<i class="fab fa-dribbble"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fab fa-linkedin-in"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fab fa-github"></i>
-								</a>
-							</li>							
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer> 
-	</div>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		
-		<script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
-		<script type="text/javascript" src="./node_modules/typed.js/lib/typed.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
-	</body>
+  <body>
+    <!-- HEADER SECTION -->
+    <div class="temp"></div>
+    <div class="first-block"></div>
+  <div class="second-block"></div>
+  <div class="loader">
+    <ul>
+      <li>L</li>
+      <li>O</li>
+      <li>A</li>
+      <li>D</li>
+      <li>I</li>
+      <li>N</li>
+      <li>G</li>
+    </ul>
+  </div>
+  <div class="third-block">
+    <header id="home" class="header">
+      <div class="header__wrapper container__header">
+        <div class="logo">
+          <a href="#home">NS</a>
+        </div>
+        <nav class="user-nav">
+          <a href="#about" class="user-nav__link">
+            About
+          </a>
+          <a href="#portfolio" class="user-nav__link">
+           Porfolio
+          </a>
+          <a href="#resources" class="user-nav__link">
+            Resources
+          </a>
+          <a href="#contact" class="user-nav__link">
+            Contact
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <!-- Hero Section -->
+
+      <section class="hero">
+        <div class="hero__layer">
+          <video autoplay muted loop id="myVideo">
+            <source src="img/Typing.mp4" type="video/mp4">
+        </video>
+        </div>
+        <div class="hero__content">
+          <h1 class="hero__heading">
+            Hello! I'm <span class="hero__heading--name">Niharika Sareen.</span
+            ><br />A front end developer.
+          </h1>
+          <a href="#portfolio" class="btn" id="cta">Check my work</a>
+        </div>
+        <div class="hero__mask"></div>
+      </section>
+
+      <!-- About Section -->
+
+      <header class="section-header">
+        <div class="section-header__heading" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="0">
+          <h2>About Me</h2>
+          <p class="section-header__subheading">About Me</p>
+        </div>
+        <p class="section-header__paragraph">
+          Always excited to learn, design and build new things.
+        </p>
+      </header>
+      <section id="about" class="container">
+        
+        <div class="profile">
+          <figure class="profile__shape">
+            <img
+              src="img/image-3.jpeg"
+              alt="Niharika Sareen"
+              class="profile__photo"
+            />
+          </figure>
+          <div class="profile__description">
+            <h3 class="heading-terciary">About Me</h3>
+            <p class="paragraph">
+              I am front end web developer with masters in computer applications. I have more than 5 years of experience in middleware and front end development but focus solely on front end. 
+I am really passionate about what I do and feel high degree of satisfaction by making webpages look beautiful, interactive and user friendly. I try my best to keep upto speed with whats happening in my sector and spend a good amount of time learning new technologies and refreshing my skills. When I am not writing code I do caligraphy and painting. I have recently moved to the UK and hence spend alot of my weekends exploring the city and nearby areas. 
+            </p>
+          </div>
+
+         
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+
+      <header class="section-header">
+        <div class="section-header__heading" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="0">
+          <h2>Portfolio</h2>
+          <p class="section-header__subheading">Portfolio</p>
+        </div>
+        <section class="container" id="portfolio" >
+          <div class="about-wrapper">
+          <div class="about">
+            <figure class="about__icon-container">
+              <img
+                src="img/codewhite.png"
+                alt="Code icon"
+                class="about__icon"
+              />
+            </figure>
+            <h3 class="heading-terciary">Code</h3>
+            <p class="paragraph">
+              I enjoy hand coding things from scratch using clean, simple and
+              maintainable code that is easy to read.
+            </p>
+          </div>
+          <div class="about">
+            <figure class="about__icon-container">
+              <img
+                src="img/designwhite.png"
+                alt="Design icon"
+                class="about__icon"
+              />
+            </figure>
+            <h3 class="heading-terciary">Design</h3>
+            <p class="paragraph">
+              I focus on crafting beautifully designed websites, and as with my
+              code, I value simple and clean design patterns.
+            </p>
+          </div>
+          <div class="about">
+            <figure class="about__icon-container">
+              <img
+                src="img/responsivewhite.png"
+                alt="Responsive icon"
+                class="about__icon"
+              />
+            </figure>
+            <h3 class="heading-terciary">Responsive</h3>
+            <p class="paragraph">
+              My projects will work on any device, no matter the size of the
+              screen.
+            </p>
+          </div>
+        </div>
+        <div class="skills">
+            <span>&bull; HTML</span>
+            <span>&bull; CSS</span>
+            <span>&bull; Sass</span>
+            <span>&bull; BEM</span>
+            <span>&bull; JavaScript</span>
+            <span>&bull; jQuery</span>
+            <span>&bull; NPM</span>
+            <span>&bull; Git</span>
+            <span>&bull; GitHub</span>
+        </div>
+      
+        
+      </header>
+      <div class="container section-header">
+        <p class="section-header__paragraph">My development projects.</p>
+        <div class="flex-grid"></div>
+      </div>
+      </section>
+
+      <!-- Resources Section -->
+
+      <header class="section-header">
+        <div class="section-header__heading" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="0">
+          <h2>Resources</h2>
+          <p class="section-header__subheading">Resources</p>
+        </div>
+        <p class="section-header__paragraph">
+          Resources I use for my development work.
+        </p>
+      </header>
+      <section id="resources" class="container">
+        <div class="flex-grid margin-bottom-large">
+          <!-- Reference box -->
+          <article class="reference">
+            <img src="img/mdn.png" alt="mdn logo" class="reference__logo" />
+            <h3 class="reference__heading">
+              <a
+                href="https://developer.mozilla.org/en-US/"
+                class="reference__link"
+                target="_blank"
+                >MDN Reference</a
+              >
+            </h3>
+            <p class="paragraph">
+              One of the best resources for documentation, tutorials and
+              developer tools available.
+            </p>
+          </article>
+          <!-- Reference box -->
+          <article class="reference">
+            <img
+              src="img/csstricks.jpeg"
+              alt="csstricks logo"
+              class="reference__logo"
+            />
+            <h3 class="reference__heading">
+              <a
+                href="https://css-tricks.com/snippets/html/glyphs/"
+                class="reference__link"
+                target="_blank"
+                >HTML Entity Reference by CSS-Tricks</a
+              >
+            </h3>
+            <p class="paragraph">
+              Great reference to find HTML entity name, numeric code, hex code
+              and ISO code.
+            </p>
+          </article>
+          <!-- Reference box -->
+          <article class="reference">
+            <img
+              src="img/hubspot.png"
+              alt="hubspot logo"
+              class="reference__logo"
+            />
+            <h3 class="reference__heading">
+              <a
+                href="http://youmightnotneedjquery.com/"
+                class="reference__link"
+                target="_blank"
+                >Javascript DOM Manipulation</a
+              >
+            </h3>
+            <p class="paragraph">
+              An useful DOM manipulation reference when using only vanilla JS.
+            </p>
+          </article>
+        </div>
+        <div class="flex-grid margin-bottom-large">
+          <!-- Reference box -->
+          <article class="reference">
+            <img
+              src="img/googlefonts.png"
+              alt="googlefonts logo"
+              class="reference__logo"
+            />
+            <h3 class="reference__heading">
+              <a
+                href="https://fonts.google.com/"
+                class="reference__link"
+                target="_blank"
+                >Google Fonts</a
+              >
+            </h3>
+            <p class="paragraph">
+              The best library with hundreds of free web fonts ready to be used.
+            </p>
+          </article>
+          <!-- Reference box -->
+          <article class="reference">
+            <img
+              src="img/fcc.jpeg"
+              alt="freecodecamp logo"
+              class="reference__logo"
+            />
+            <h3 class="reference__heading">
+              <a
+                href="https://www.freecodecamp.org/"
+                class="reference__link"
+                target="_blank"
+                >FreeCodeCamp</a
+              >
+            </h3>
+            <p class="paragraph">
+              A well known plataform to learn and share your passion with fellow
+              coders.
+            </p>
+          </article>
+          <!-- Reference box -->
+          <article class="reference">
+            <img
+              src="img/stackoverflow.jpg"
+              alt="stackoverflow logo"
+              class="reference__logo"
+            />
+            <h3 class="reference__heading">
+              <a
+                href="https://stackoverflow.com/"
+                class="reference__link"
+                target="_blank"
+                >Stack Overflow</a
+              >
+            </h3>
+            <p class="paragraph">
+              A great community to ask and find questions related to web
+              development.
+            </p>
+          </article>
+        </div>
+        <div class="flex-grid">
+          <article class="reference">
+            <img
+              src="img/dribble.png"
+              alt="dribble logo"
+              class="reference__logo"
+            />
+            <h3 class="reference__heading">
+              <a
+                href="https://dribbble.com/"
+                class="reference__link"
+                target="_blank"
+                >Dribbble</a
+              >
+            </h3>
+            <p class="paragraph">
+              Highly popular community for designers and an excellent design
+              inspiration resource.
+            </p>
+          </article>
+          <!-- Reference box -->
+          <article class="reference">
+            <img
+              src="img/brightside.jpg"
+              alt="brightside logo"
+              class="reference__logo"
+            />
+            <h3 class="reference__heading">
+              <a
+                href="https://brightside.me/article/the-ultimate-color-combinations-cheat-sheet-92405/"
+                class="reference__link"
+                target="_blank"
+                >Color Combinations Cheat Sheet</a
+              >
+            </h3>
+            <p class="paragraph">
+              A color combination cheat sheet I sometimes use for my designs.
+            </p>
+          </article>
+          <!-- Reference box -->
+          <article class="reference">
+            <img
+              src="img/colorhunt.png"
+              alt="colorhunt logo"
+              class="reference__logo"
+            />
+            <h3 class="reference__heading">
+              <a
+                href="https://colorhunt.co/"
+                class="reference__link"
+                target="_blank"
+                >Colorhunt Color Palettes</a
+              >
+            </h3>
+            <p class="paragraph">
+              Very useful resource to find the right color palettes.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+
+      <header class="section-header">
+        <div class="section-header__heading" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="0">
+          <h2>Contact</h2>
+          <p class="section-header__subheading">Contact</p>
+        </div>
+        <p class="section-header__paragraph">
+          You have a question or want to work together?
+        </p>
+      </header>
+      <section id="contact" class="contact-section container">
+        <div class="contact-form">
+          <div class="form-side">
+            <h3 class="form-side__heading">Say Hi!</h3>
+            <p class="form-side__heading">Dont be shy</p>
+            <p class="form-side__subheading">Feel free to check out my resumé on "linkdin" to know more about my employment and education history.</p>
+            <div class="form-side__content">
+              <i class="fas fa-envelope"></i>
+              <span class="form-side__span">niharika.sareen@gmail.com</span>
+            </div>
+            <div class="form-side__content">
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="form-side__span"
+                >Manchester, United Kingdom</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="container">
+        <div class="center-text">
+          <span class="copyright"
+            >&copy; 2019
+            <span class="copyright__name">Niharika Sareen</span></span
+          >
+          <p class="footer-nav">
+            <a href="#home" class="footer-nav__link">Home</a> &nbsp;|&nbsp;
+            <a href="#about" class="footer-nav__link">About</a> &nbsp;|&nbsp;
+            <a href="#portfolio" class="footer-nav__link">Portfolio</a>
+            &nbsp;|&nbsp;
+            <a href="#resources" class="footer-nav__link">Resources</a>
+          </p>
+          <div class="social-media">
+            <a
+              href="https://github.com/NiharikaSareen"
+              target="_blank"
+              class="social-media__icon"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/niharika-sareen/"
+              target="_blank"
+              class="social-media__icon"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

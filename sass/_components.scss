@@ -1,0 +1,748 @@
+// TYPOGRAPHY
+
+.heading-terciary {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.paragraph {
+  font-size: $default-font;
+  line-height: 1.8;
+}
+
+//////////////////
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  a{
+    color: $green;
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-size: 2em;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  @include responsive(phone) {
+    display: none;
+  }
+}
+
+.user-nav {
+  display: flex;
+  font-size: $default-font;
+
+  @include responsive(phone) {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    transition: all 400ms;
+    text-transform: uppercase;
+
+    &:link,
+    &:visited {
+      color: $green;
+    }
+
+    &:hover {
+      color: $white;
+      background: $green;
+    }
+    @include responsive(phone) {
+      //widh < 600px?
+      padding: 1rem;
+    }
+  }
+}
+
+.hero {
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  text-align: center;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+
+  @include responsive(big-desktop) {
+    //widh => 1800px?
+    height: 120vh;
+  }
+
+  @include responsive(tab-land) {
+    //widh < 1200px?
+    height: 90vh;
+  }
+
+  @include responsive(tab-port) {
+    //widh < 900px?
+    height: 50vh;
+  }
+
+  @include responsive(phone-land) {
+    //widh 600 - 740px
+    height: 90vh;
+  }
+
+  @include responsive(phone) {
+    //widh < 600px?
+    height: 40vh;
+    background-position: center;
+  }
+
+  .hero__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    video{
+      min-width: 100%; 
+      min-height: 100%; 
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+
+  &__content {
+    width: 100%;
+    z-index: 5;
+  }
+
+  &__heading {
+    font-size: 5rem;
+    line-height: 1.2;
+    margin-bottom: 4rem;
+    color: $white;
+
+    @include responsive(phone) {
+      //widh < 600px?
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    &--name {
+      color: $green;
+    }
+  }
+  &__mask{
+    background: -webkit-linear-gradient(left, rgba($black, 1.0) 0%, rgba($black, .9) 60%, rgba($gray, 0.5) 100%);
+    background: -moz-linear-gradient(left, rgba($black, 1.0) 0%, rgba($black, .9) 60%, rgba($gray, 0.5) 100%);
+    background: linear-gradient(to right, rgba($black, 1.0) 0%, rgba($black, .9) 60%, rgba($gray, 0.5) 100%);
+    z-index: 1;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.btn {
+  font-size: $default-font;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 2rem 3rem;
+  border-radius: $borders;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: $white;
+  background-color: $green;
+  transition: all 400ms;
+
+  @include responsive(phone) {
+    //widh < 600px?
+    padding: 1rem;
+  }
+
+  &:hover {
+    background-color: $green;
+  }
+}
+
+.section-header {
+  padding: 2rem 0;
+  text-align: center;
+  @include responsive(phone) {
+    //widh < 600px?
+    padding: 1rem;
+  }
+
+  &__heading {
+    display: flex;
+    transform-style: preserve-3d;
+    align-items: center;
+    justify-content: center;
+    h2{
+      padding: 25px 30px;
+      -webkit-transition: letter-spacing .5s ease-in-out;
+      transition: letter-spacing .5s ease-in-out;
+      color: $green;
+      font-size: 2em;
+      text-align: center;
+      letter-spacing: 4px;
+      text-decoration: none;
+      text-transform: uppercase;
+      line-height: 30px;
+      font-weight: 600;
+      font-weight: bold;
+    }
+    }
+    &__subheading{
+    position: absolute;
+    z-index: 99;
+    font-family: kepler-std-display;
+    color: rgba($green,.2);
+    font-size: 5em;
+    font-weight: 500;
+    line-height: 60px;
+    font-style: italic;}
+
+   /* @include responsive(phone) {
+      //widh < 600px?
+      font-size: 2.5rem;
+    }*/
+  
+
+  &__paragraph {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: $gray;
+
+    @include responsive(phone) {
+      //widh < 600px?
+      font-size: 1.8rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.about-wrapper {
+  display: flex;
+
+  @include responsive(tab-port) {
+    //widh < 900px?
+    justify-content: space-between;
+  }
+
+  @include responsive(phone) {
+    //widh < 600px?
+    flex-wrap: wrap;
+  }
+}
+
+.about {
+  width: calc(100% / 3);
+  text-align: center;
+  margin: 0 2rem;
+
+  @include responsive(tab-port) {
+    //widh < 900px?
+    width: 25%;
+    margin: 0;
+  }
+
+  @include responsive(phone) {
+    //widh < 600px?
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  &__icon-container {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: $green;
+    margin-bottom: 1rem;
+
+    @include responsive(tab-port) {
+      //widh < 900px?
+      width: 8rem;
+      height: 8rem;
+    }
+
+    @include responsive(phone) {
+      //widh < 600px?
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+
+  &__icon {
+    height: 50%;
+  }
+}
+
+.profile {
+  width: 100%;
+  margin-top: 6rem;
+  min-height: 30rem;
+  @include responsive(phone) {
+    //widh < 600px?
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: justify;
+  }
+
+  &__shape {
+    width: 30rem;
+    height: 30rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    margin-right: 2rem;
+
+    @include responsive(tab-port) {
+      //widh < 900px?
+      width: 18rem;
+      height: 18rem;
+    }
+
+    @include responsive(phone) {
+      //widh < 600px?
+      width: 15rem;
+      height: 15rem;
+      shape-outside: none;
+    }
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__description {
+    margin-top: 1rem;
+
+    @include responsive(phone) {
+      //widh < 600px?
+      & > :first-child {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.skills {
+  width: 70%;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 2rem 0 0 1rem;
+  color: $green;
+
+  @include responsive(tab-port) {
+    //widh < 900px?
+    width: 100%;
+  }
+
+  @include responsive(phone) {
+    //widh < 600px?
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  & span:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &__paragraph {
+    color: $color-font;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+}
+
+.card {
+  width: calc(100% / 3 - 2rem);
+  height: 41rem;
+  margin: 1rem;
+  overflow: hidden;
+  border-bottom-right-radius: $borders;
+  border-bottom-left-radius: $borders;
+  -webkit-box-shadow: 0px 0px 50px -10px rgba($black,0.7);
+-moz-box-shadow: 0px 0px 50px -10px rgba($black,0.7);
+box-shadow: 0px 0px 50px -10px rgba($black,0.7);
+
+  @include responsive(tab-port) {
+    //widh < 900px?
+    width: calc(100% / 2 - 2rem);
+  }
+
+  @include responsive(phone) {
+    //widh < 600px?
+    width: 95%;
+    margin: 1rem auto;
+  }
+
+  &__thumbnail {
+    height: 60%;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__description {
+    padding: 1rem;
+    height: 40%;
+    text-align: center;
+    background-color: $white;
+    position: relative;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    display: inline-block;
+    transition: all 350ms;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-font;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    line-height: 1.4;
+
+    @include responsive(phone) {
+      //widh < 600px?
+      margin-top: 0;
+    }
+  }
+
+/*  &__github {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #999999;
+    transition: color 250ms ease-out;
+    position: absolute;
+    bottom: 1rem;
+    transform: translateX(-50%);
+
+    &:hover {
+      color: $;
+    }
+  }*/
+}
+
+.reference {
+  width: calc(100% / 3 - 2rem);
+  margin: 0 auto;
+
+  @include responsive(phone) {
+    //widh < 600px?
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  &__logo {
+    height: 4.2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    color: $gray;
+    text-decoration: none;
+    transition: color 400ms;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+.contact-form {
+  display: flex;
+  width: 75rem;
+  padding: 3rem;
+  border-radius: $borders;
+  background: -webkit-linear-gradient(left, rgba($black, 1.0) 0%, rgba($black, .7) 85%);
+  background: -moz-linear-gradient(left, rgba($black, 1.0) 0%, rgba($black, .7) 85%);
+  background: linear-gradient(to right, rgba($black, 1.0) 0%, rgba($black, .7) 85%);
+  -webkit-box-shadow: 0px 0px 50px -10px rgba($black,0.7);
+-moz-box-shadow: 0px 0px 50px -10px rgba($black,0.7);
+box-shadow: 0px 0px 50px -10px rgba($black,0.7);
+  @include responsive(phone) {
+    //widh < 600px?
+    background: $black;
+  }
+}
+
+.form-side {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  width: 100%;
+  text-align: center;
+  &__heading {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: $white;
+    text-transform: uppercase;
+  }
+  
+  &__subheading{
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    color: $white;
+  }
+
+  &__content {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    color: $white;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  &__span {
+    font-size: $default-font;
+    margin-left: 1rem;
+  }
+}
+
+.footer-nav {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: $light-gray;
+
+  &__link {
+    text-decoration: none;
+    color: $light-gray;
+    transition: all 400ms;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+.social-media {
+  font-size: 3.5rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+
+  a:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &__icon {
+    color: $light-gray;
+    transition: all 400ms;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+.copyright {
+  font-size: $default-font;
+  text-transform: uppercase;
+  color: $light-gray;
+  margin: 0 auto;
+
+  &__name {
+    color: $green;
+    font-weight: bold;
+  }
+}
+
+.temp{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url('../img/background.gif') no-repeat 50% 50%;
+  background-size: cover;
+  animation: fadeOut 5s linear forwards;
+  opacity: 1;
+  overflow-y: hidden;
+}
+@keyframes fadeOut{
+  0%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 0;
+  }
+  41%{
+    opacity: 1;
+  }
+  91%{
+    opacity: 1;
+  }
+  92%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.first-block{
+  position: fixed;
+  width: 0%;
+  height: 100%;
+  background: #272727;
+  animation: go-left 4s cubic-bezier(.74, .86, .4, .92) forwards;
+  left: 0;
+  overflow-y: hidden;
+}
+
+@keyframes go-left{
+  0%{
+    left:0;
+    width: 0%;
+  }
+  50%{
+    left:0;
+    width: 100%;
+  }
+  100%{
+    left: 100%;
+    width: 0;
+  }
+
+}
+.second-block{
+  position: fixed;
+  width: 0%;
+  height: 100%;
+  background: $green;
+  animation: go-left 3.2s cubic-bezier(.74, .06, .4, .92) forwards;
+  animation-delay: 3s;
+  overflow-y: hidden;
+}
+.loader{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader ul{
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+.loader ul li{
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  font-family: Poppins;
+  margin: 0 8px;
+  font-size: 24px;
+  text-transform: uppercase;
+  animation: loadNow 4s ease-in-out forwards;
+  opacity: 0;
+  transform: translateX(0px);
+}
+
+@keyframes loadNow{
+  0%{
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  20%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  80%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+}
+
+.loader ul li:nth-child(1){
+  animation-delay: 1.1s
+}
+.loader ul li:nth-child(2){
+  animation-delay: 1.2s
+}
+.loader ul li:nth-child(3){
+  animation-delay: 1.3s
+}
+.loader ul li:nth-child(4){
+  animation-delay: 1.4s
+}
+.loader ul li:nth-child(5){
+  animation-delay: 1.5s
+}
+.loader ul li:nth-child(6){
+  animation-delay: 1.6s
+}
+.loader ul li:nth-child(7){
+  animation-delay: 1.7s
+}
+.third-block{
+  position: absolute;
+  width: 0%;
+  height: 100vh;
+  background: #f0f0f0;
+  animation: expandNow 1.4s cubic-bezier(.19, 1, .22, 1) forwards;
+  animation-delay: 6.2s;
+  opacity:0;
+  overflow-y: hidden;
+}
+@keyframes expandNow{
+  30%{
+    width: 0%;
+    opacity:0;
+    overflow-y: hidden;
+  }
+  100%{
+    width: 100%;
+    opacity:1;
+    overflow-y: scroll;
+  }
+}
